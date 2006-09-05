@@ -1,0 +1,44 @@
+Apache-HealthCheck version 0.01
+===============================
+
+Checks a list of urls for specific return codes and then returns a 
+code / header / page of it's own.  This is useful for web server 
+clusters where you might have a switch or a web server performing 
+periodic health checks on an application.  This module allows you 
+to harness the checks of all the urls (web services) a specific 
+node might have in one easy to "check" URL.
+
+RESOURCES
+
+Trac Site:
+   http://svn.mg2.org/projects/apache-healthcheck/
+   
+SVN Repository:
+   http://svn.mg2.org/svn/apache-healthcheck/
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+LWP::UserAgent
+HTTP::Request
+
+For SSL support:
+Net::SSLeay
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2006 by Michael Gregorowicz
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.6.1 or,
+at your option, any later version of Perl 5 you may have available.

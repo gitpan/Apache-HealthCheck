@@ -1,0 +1,6 @@
+Revision history for Perl extension Apache::HealthCheck.
+
+0.01  Mon Sep  4 21:04:22 2006
+	- original version; created by h2xs 1.23 with options
+		-AX --skip-exporter --use-new-tests -n Apache::HealthCheck
+
